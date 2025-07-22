@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.svg" alt="Logo" class="logo-img" />
+        </a>
+
+      
+        <!-- Hamburger Icon -->
+        <button class="hamburger" id="hamburger">☰</button>
+
+        <!-- Nav links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="spots.html">Spots</a></li>
+          <li><a href="contact.html">Contacts</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Contact Form Section -->
+    <main class="container">
+      <section>
+        <h2>Get in Touch</h2>
+        <form id="contact-form" action="#" method="post">
+          <!-- Name Input -->
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Enter your full name"
+          />
+
+          <!-- Email Input -->
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="example@domain.com"
+          />
+
+          <!-- Message Textarea -->
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            placeholder="Your message must be at least 10 characters long..."
+          ></textarea>
+
+          <!-- Submit Button -->
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; Made by foodies @ Sunway University ❤️ | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

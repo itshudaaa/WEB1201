@@ -1,0 +1,188 @@
+/* === Body and Base === */
+body, html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fe7f7fa8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  min-height: 100vh;
+}
+
+/* === Page Background Wrapper === */
+.page-bg {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* === Main Content Container === */
+.container {
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+/* === Navbar === */
+.navbar {
+  background-color: #f8d9b4;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.logo-img {
+  height: 40px;
+}
+
+/* === Nav Links === */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #f85f5f;
+}
+
+/* === Hamburger Menu (Hidden by Default) === */
+.hamburger {
+  display: none;
+}
+
+/* === Auth Tabs === */
+.auth-tabs {
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+.auth-tabs button {
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: #333333a4 2px solid;
+  background-color: #fff8e7;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 0 10px;
+}
+
+.auth-tabs button:hover {
+  background-color: #ffeedd;
+  transform: translateY(-3px);
+}
+
+/* === Auth Forms === */
+.auth-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.auth-form input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.auth-form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #f85f5f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.auth-form button:hover {
+  background-color: #e04b4b;
+}
+
+.hidden {
+  display: none;
+}
+
+/* === Footer === */
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  font-size: 0.95rem;
+  font-weight: bold;
+  background-color: #f8d9b4;
+  color: #222;
+}
+
+/* === Responsive Styles === */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #f85f5f;
+    margin-right: 5px;
+    border-radius: 8px;
+    padding: 5px 10px;
+    color: #fff;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f8dab4;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    width: 200px;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  #moodTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c2c2c;
+    margin-bottom: 20px;
+  }
+
+  .logo-img {
+    height: 50px;
+    width: auto;
+    display: block;
+  }
+}
